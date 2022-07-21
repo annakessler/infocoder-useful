@@ -41,15 +41,16 @@
 	position: relative
 	display: inline-block
 	transition: all .3s
-	&::after
-		content: ""
-		position: absolute
-		bottom: -3px
-		left: 0
-		width: 100%
-		height: 2px
-		background: radial-gradient(329% 50% at 150% 58%, #E7E61A 25%, #B03535 66%)
-		border-radius: 5px
+	&--hero
+		&::after
+			content: ""
+			position: absolute
+			bottom: -3px
+			left: 0
+			width: 100%
+			height: 2px
+			background: radial-gradient(329% 50% at 150% 58%, #E7E61A 25%, #B03535 66%)
+			border-radius: 5px
 	&:hover
 		transform: translateY(-2px)
 		opacity: 0.8
