@@ -1,0 +1,36 @@
+.links
+	display: flex
+	justify-content: space-between
+
+	&__title
+		margin: 0
+		margin-bottom: 30px
+		font-family: 'Yaldevi-Colombo', sans-serif
+		font-weight: 600
+		+adaptive-font(32, 20)
+		line-height: 1.1
+
+	&__column
+		max-width: 340px
+
+.list
+	padding-left: 20px
+
+	&__item
+		position: relative
+		margin-bottom: 15px
+		&::before
+			content: ""
+			position: absolute
+			width: 10px
+			height: 10px
+			left: -20px
+			top: 50%
+			background: linear-gradient(180deg, #B03535 -36.67%, #E7E61A 100%)
+			border-radius: 100%
+			transform: translateY(-50%)
+
+	&__link
+		display: inline
+		+adaptive-font(20, 18)
+		line-height: 1.3
