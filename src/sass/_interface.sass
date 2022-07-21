@@ -1,6 +1,42 @@
 .section
 	padding: 50px 0
 
+@media (min-width: $md)
+	.menu
+		&__list
+			display: flex
+			align-items: center
+
+		&__item
+			padding: 10px 0
+
+.logo
+	&__img
+		width: 250px
+		height: auto
+		fill: $white
+	@media (max-width: $md)
+		width: 200px
+
+.social
+	&__link
+		margin-right: 30px
+		&:last-child
+			margin: 0
+		@media (max-width: $md)
+			margin-right: 15px
+	&__icon
+		width: 50px
+		transition: all .3s
+		&:hover
+			transform: scale(1.1)
+			opacity: 0.9
+		@media (max-width: $md)
+			width: 35px
+	&--footer
+		@media (max-width: $md)
+			margin-bottom: 15px
+
 .link
 	position: relative
 	display: inline-block
