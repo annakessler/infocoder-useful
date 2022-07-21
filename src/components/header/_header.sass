@@ -1,6 +1,7 @@
 .header
 	width: 100%
 	background-color: #282828
+	border-bottom: 2px solid #000
 
 	&.fixed
 		z-index: 10
@@ -16,15 +17,23 @@
 		align-items: center
 		justify-content: space-between
 		min-height: 70px
+		@media (max-width: $md)
+			padding: 20px 15px
+		@media (max-width: $xs)
+			flex-direction: column
 
 	&__logo
 		z-index: 5
 		display: block
+		@media (max-width: $xs)
+			margin-bottom: 10px
 
 .logo__img
 	width: 250px
 	height: auto
 	fill: $white
+	@media (max-width: $md)
+		width: 200px
 
 .social
 
@@ -32,12 +41,19 @@
 		margin-right: 30px
 		&:last-child
 			margin: 0
+		@media (max-width: $md)
+			margin-right: 15px
 
 	&__icon
 		width: 50px
-		height: 50px
+		transition: all .3s
+		&:hover
+			transform: scale(1.1)
+			opacity: 0.9
+		@media (max-width: $md)
+			width: 35px
 
-@media (min-width: 767px)
+@media (min-width: $md)
 
 	.menu__list
 		display: flex

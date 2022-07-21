@@ -148,5 +148,14 @@
       "</div>"
     ],
     "description": "Snippet for basic tabs structure"
-  }
+  },
+	"@media": {
+	"prefix": "@mb",
+	"scope": "css",
+	"body": [
+	"@media (max-width: $1px)",
+	"  $2"
+	],
+	"description": "Подключение @media"
+}
 }
