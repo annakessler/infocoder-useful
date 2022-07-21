@@ -1,17 +1,28 @@
 .links
 	display: flex
 	justify-content: space-between
+	@media (max-width: $lg)
+		flex-wrap: wrap
+		justify-content: space-around
 
 	&__title
 		margin: 0
 		margin-bottom: 30px
 		font-family: 'Yaldevi-Colombo', sans-serif
 		font-weight: 600
-		+adaptive-font(32, 20)
+		+adaptive-font(32, 22)
 		line-height: 1.1
+		@media (max-width: 850px)
+			margin-bottom: 15px
 
 	&__column
-		max-width: 340px
+		width: 100%
+		max-width: 300px
+		@media (max-width: $lg)
+			max-width: 270px
+		@media (max-width: 850px)
+			max-width: 100%
+			margin-bottom: 20px
 
 .list
 	padding-left: 20px
@@ -32,5 +43,5 @@
 
 	&__link
 		display: inline
-		+adaptive-font(20, 18)
+		+adaptive-font(20, 16)
 		line-height: 1.3
